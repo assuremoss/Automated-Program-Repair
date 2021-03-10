@@ -1,10 +1,14 @@
 """
-Generating data
+This module contains a function to run the repair process within time budget
 """
 from dataclasses import dataclass
+import logging
 import os
+from pathlib import Path
 import subprocess
 import tempfile
+from time import gmtime
+from time import strftime
 
 from .utils import function_logger
 
@@ -32,14 +36,14 @@ class APR:
 
         # Patch will be saved based on time of executing the repair process
         current_date = strftime("%Y-%m-%d-%H-%M-%S", gmtime())
-        result_dir = "{0}/{1}/{2}:/results".format(str(Path(patches_dir) / 'results'), current_date, str(timeout))
+        result_dir = "{0}/{1}/{2}:/results".format(str(Path(patches_dir) / 'results'), current_date, str(time_budget))
         command= (['docker', 'run', '-it',
                     "--name", container_name,
                     "--rm", '-v', result_dir,
                     'tdurieux/repairthemall', str(self.tool),
                     '-b', str(self.benchmark) ,
                     '-i', str(self.bug_id),
-                    '--seed', str(self.seed)]
+                    '--seed', str(self.seed)])
 
         process = subprocess.Popen(command)
 
