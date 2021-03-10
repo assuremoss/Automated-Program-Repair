@@ -1,0 +1,45 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+pathlib = "*"
+click = "*"
+dotenv = "*"
+sh = "*"
+jupyter = "*"
+pandas = "*"
+xlrd = "*"
+from = "*"
+import = "*"
+python-dotenv = "*"
+matplotlib = "*"
+openpyxl = "*"
+black = "*"
+tabula-py = "*"
+python-docx = "*"
+jupyter-contrib-nbextensions = {file = "https://github.com/ipython-contrib/jupyter_contrib_nbextensions/tarball/master"}
+cite2c = "*"
+python-markdown = "*"
+codefolding = "*"
+install = "*"
+autopep8 = "*"
+ipython = "*"
+bibtexparser = "*"
+gscholar = "*"
+lizard = "*"
+rq = "*"
+redis = "*"
+sphinx = "*"
+pymongo = "*"
+pytest = "*"
+plyj = "*"
+javalang = "*"
+bs4 = "*"
+whatthepatch = "*"
+
+[requires]
+python_version = "3.6"
