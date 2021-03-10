@@ -20,7 +20,7 @@ def function_logger(file_level: str, console_level: str, logdirs=""):
     logger.addHandler(ch)
 
     logger.propagate = False
-    log_dir = Path.cwd() / "logs"
+    log_dir = Path(get_project_root_dir()) / "logs"
     log_dir.mkdir(parents=True, exist_ok=True)
     log_file = f"{str(log_dir)}/log.log"
     fh = logging.FileHandler(str(log_file))
@@ -34,3 +34,6 @@ def function_logger(file_level: str, console_level: str, logdirs=""):
     logger.addHandler(fh)
 
     return logger
+
+def get_project_root_dir() -> str:
+    return str(Path(__file__).parent.parent) # This is your Project Root

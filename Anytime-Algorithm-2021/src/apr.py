@@ -50,7 +50,7 @@ class APR:
         logger.info("Repairing {} ".format(container_name))
         try:
             outs, errs = process.communicate(timeout=(int(time_budget) * 60))
-        except TimeoutExpired:
+        except subprocess.TimeoutExpired:
             logger.info("Repair process terminated")
             os.system("docker kill {}".format(container_name))
 
