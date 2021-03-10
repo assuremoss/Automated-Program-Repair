@@ -1,5 +1,6 @@
 ---  
 Title: Please hold on: more time = more patches? Automated program repair as anytime algorithms
+Accepted at 2nd International Workshop on Automated Program Repair (APR 2021).
 
 Authors:
   - name: Duc-Ly Vu 
