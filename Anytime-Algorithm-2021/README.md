@@ -31,3 +31,16 @@ linearly or not at all."
 - Python >= 3.8
 - [Pipenv](https://pypi.org/project/pipenv/)
 
+
+### Installation
+```console
+1. git clone https://github.com/assuremoss/Automated-Program-Repair
+2. cd Automated-Program-Repair/Anytime-Algorithm-2021/
+3. pipenv shell
+4. pipenv install
+```
+### Running tests
+```console
+1. cd tests/
+2. pytest -s
+```
