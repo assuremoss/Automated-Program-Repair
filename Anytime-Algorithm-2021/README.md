@@ -26,3 +26,8 @@ linearly or not at all."
 
 ---  
 
+### Requirements
+- [RepairThemAll Docker image](https://github.com/program-repair/RepairThemAll/blob/master/INSTALL.md#from-docker)
+- Python >= 3.8
+- [Pipenv](https://pypi.org/project/pipenv/)
+
