@@ -9,4 +9,5 @@
 ## Current Progress:
 - [x] Build Juliet programs successfully
 - [ ] Integreate the build tool Ant into RepairThemAll
+- [x] Build a single test case sucessfully. To build a test case, we use **javac**, a test case, and a list of testcasse support files
 
